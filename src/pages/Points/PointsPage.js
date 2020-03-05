@@ -10,6 +10,9 @@ class PointsPage extends Component {
   };
 
   render() {
+    const saveHandler = () => {
+      console.log(this.state)
+    };
     return (
         <form>
           <div className="form-group">
@@ -35,7 +38,7 @@ class PointsPage extends Component {
             <label className="form-check-label" htmlFor="redCard">Tarjeta
               Roja</label>
           </div>
-          <button type="button" onClick={() => console.log(this.state)} className="btn btn-primary">Guardar</button>
+          <button type="button" onClick={saveHandler} className="btn btn-primary">Guardar</button>
           <button type="button" onClick={() => this.props.history.push({pathname: "/"})}
                   className="btn btn-danger">Cancelar
           </button>

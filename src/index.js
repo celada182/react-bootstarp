@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
+import '@popperjs/core'
+import 'bootstrap/dist/js/bootstrap.min.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
